@@ -13,10 +13,8 @@
 
   <body class="container">
     <!--NAVBAR START-->
-    <div id="nav-bar" class="container">
-      <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-      >
+    <div id="nav-bar">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
         <a
           href="/"
           class="
@@ -30,17 +28,14 @@
           <svg class="bi me-2" width="40" height="32">
             <use xlink:href="#bootstrap" />
           </svg>
-          <span class="fs-4">Lugar</span>
+          <span class="fs-4 my-title">Lugar</span>
         </a>
 
         <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Project</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
         </ul>
       </header>
     </div>
@@ -107,5 +102,97 @@
       </div>
     </div>
     <!--ONGIOING PROJECTS END-->
+    <!--TESTIMONIAL START-->
+    <div id="testimonial-section">
+      <div id="testimonial-header">
+        <h1>Few smiles and comment</h1>
+        <h3>Turpis facilisis tempor pulvinar in lobortis ornare magna.</h3>
+      </div>
+      <div class="row testimonial-main">
+        <div class="col-md-6 testimonial-left">
+          <img src="./public/assets/img/Photo.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 testimonial-right">
+          <h1>Dream house isn’t dream anymore</h1>
+          <p>
+            Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra
+            scelerisque. Ipsum, turpis facilisis tempor pulvinar.
+          </p>
+          <h2>Brooklyn Simmons</h2>
+          <h4>Artist</h4>
+        </div>
+      </div>
+    </div>
+    <!--TESTIMONIAL END-->
+    <!--CONTACT START-->
+    <div id="contact-section">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./public/assets/img/left.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGrid"
+                  placeholder="First name"
+                />
+                <label for="floatingTextarea2">First name</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGrid"
+                  placeholder="Last name"
+                />
+                <label for="floatingTextarea2">Last name</label>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2 mt-4">
+            <div class="col-md">
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInputGrid"
+                  placeholder="email"
+                />
+                <label for="floatingTextarea2">Email Address</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGrid"
+                  placeholder="Phonenumber"
+                />
+                <label for="floatingTextarea2">Phone number</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-floating mt-4">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">Description</label>
+          </div>
+          <button type="button" class="btn btn-dark">Our projects</button>
+        </div>
+      </div>
+    </div>
+
+    <!--CONTACT END-->
   </body>
 </html>

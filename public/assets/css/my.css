@@ -8,14 +8,50 @@ body {
 }
 
 /* NAVBAR */
+
+.container {
+  background-color: white;
+}
+#nav-bar::before {
+  content: "";
+  background-color: #afd4e2;
+  position: absolute;
+  height: 100%;
+  width: 200vw;
+  left: -100vw;
+  z-index: -1;
+}
+.my-title {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #1e3240;
+  position: relative;
+  display: grid;
+}
+
 #nav-bar {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1e3240;
+}
+
+#nav-bar a {
+  color: #1e3240;
 }
 
 /* HERO */
 
 #hero-section {
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 15rem;
   background-color: #afd4e2;
 }
 
@@ -37,7 +73,6 @@ body {
   background: #1e3240;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 #hero-section img {
 }
 
@@ -84,3 +119,143 @@ body {
 .three {
   margin-right: 50px;
 }
+
+/* TESTIMONIAL SECTION */
+#testimonial-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#testimonial-header {
+  height: 92px;
+  margin-bottom: 5rem;
+}
+
+#testimonial-header h1 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+  /* identical to box height, or 58px */
+  text-align: center;
+  color: #1e3240;
+}
+
+#testimonial-header h3 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  /* identical to box height, or 22px */
+  text-align: center;
+  color: #1e3240;
+}
+
+.testimonial-right {
+  margin-top: 3rem;
+}
+.testimonial-left {
+}
+
+.testimonial-left img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-right h1 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1e3240;
+}
+.testimonial-right p {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+  color: #1e3240;
+  margin-top: 1.5rem;
+}
+.testimonial-right h2 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+  color: #1e3240;
+  margin-top: 1.5rem;
+}
+.testimonial-right h4 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  /* identical to box height, or 22px */
+  color: #1e3240;
+}
+
+/* CONTACT SECTION */
+
+#contact-section {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+}
+
+#contact-section button {
+  background: #1e3240;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 2rem;
+  border-radius: 1px;
+}
+#contact-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 915px) {
+  #hero-section img {
+    display: none;
+  }
+  #about-section {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    background: white;
+  }
+  #hero-section {
+    padding-bottom: 15px;
+  }
+
+  #nav-bar::before {
+    content: "";
+    background-color: #afd4e2;
+    width: 200vw;
+  }
+}
+
+/*
+@media only screen and (max-width: 800px) {
+  #nav-bar::before {
+    content: "";
+    background-color: #afd4e2;
+    position: absolute;
+    width: 200vw;
+    left: -100vw;
+    z-index: -1;
+  }
+  #about-section {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    background: white;
+  }
+}
+*/

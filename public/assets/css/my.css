@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 88%;
+  max-width: 78%;
 }
 
 /* NAVBAR */
@@ -16,8 +16,8 @@ body {
   content: "";
   background-color: #afd4e2;
   position: absolute;
-  height: 100%;
-  width: 200vw;
+  height: 115%;
+  width: 199vw;
   left: -100vw;
   z-index: -1;
 }
@@ -158,12 +158,12 @@ body {
 }
 .testimonial-left {
 }
-
+/*
 .testimonial-left img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 .testimonial-right h1 {
   font-family: Mulish;
@@ -216,15 +216,78 @@ body {
   margin-top: 2rem;
   border-radius: 1px;
 }
-#contact-section img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+/* FOOTER SECTION */
+
+#footer-section {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  background: #1e3240;
 }
 
+i {
+  margin-right: 0.5rem;
+}
+
+#footer-section p {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+}
+
+.copyright {
+  margin-top: 10rem;
+}
+
+#footer-section h5 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: white;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+#footer-section h1 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: white;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+#footer-section::before {
+  content: "";
+  background-color: #1e3240;
+  position: absolute;
+  height: 65%;
+  width: 199vw;
+  left: -100vw;
+  z-index: -1;
+}
+/* ----------------------------- MEDIA -----------------------------*/
 @media only screen and (max-width: 915px) {
   #hero-section img {
     display: none;
+  }
+  #hero-section h1 {
+    font-weight: bold;
+    font-size: 38px;
+    margin-top: -3rem;
   }
   #about-section {
     margin-top: 10rem;
@@ -239,6 +302,63 @@ body {
     content: "";
     background-color: #afd4e2;
     width: 200vw;
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #contact-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .contact-right {
+    padding-top: 5rem;
+  }
+  #hero-section h1 {
+    font-weight: bold;
+    font-size: 38px;
+    margin-top: -3rem;
+  }
+  .copyright {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  #footer-section::before {
+    content: "";
+    background-color: #1e3240;
+    position: absolute;
+    height: 85%;
+    width: 199vw;
+    left: -100vw;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  #footer-section::before {
+    content: "";
+    background-color: #1e3240;
+    position: absolute;
+    height: 130%;
+    width: 199vw;
+    left: -100vw;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 392px) {
+}
+
+@media only screen and (max-width: 392px) {
+  .testimonial-left img {
+    margin-top: 5rem;
+  }
+  #nav-bar::before {
+    content: "";
+    background-color: #afd4e2;
+    width: 200vw;
+    height: 90%;
   }
 }
 

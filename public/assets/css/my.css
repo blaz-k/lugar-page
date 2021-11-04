@@ -51,7 +51,7 @@ body {
 
 #hero-section {
   margin-top: 5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 25rem;
   background-color: #afd4e2;
 }
 
@@ -332,6 +332,14 @@ i {
     width: 199vw;
     left: -100vw;
     z-index: -1;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #nav-bar::before {
+    content: "";
+    background-color: #afd4e2;
+    width: 200vw;
+    height: 65%;
   }
 }
 
